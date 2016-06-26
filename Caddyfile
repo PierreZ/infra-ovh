@@ -1,0 +1,8 @@
+pierrezemb.ovh {
+	tls contact@pierrezemb.fr
+	proxy / pierrezemb.ovh:8080
+}
+quantum.pierrezemb.ovh {
+	tls contact@pierrezemb.fr
+	proxy / pierrezemb.ovh:8081
+}
