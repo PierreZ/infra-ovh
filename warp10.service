@@ -9,5 +9,5 @@ Restart=always
 ExecStartPre=-/usr/bin/docker kill warp10
 ExecStartPre=-/usr/bin/docker rm warp10
 ExecStartPre=/usr/bin/docker pull warp10io/warp10:1.0.7
-ExecStart=/usr/bin/docker run --volume=/home/core/warp10:/data -i -p 8080:8080 --name warp10 -p 8081:8081 -d warp10io/warp10:1.0.7
+ExecStart=/usr/bin/docker run --volume=/var/warp10:/data --name warp10 -p 8080:8080 -p 8081:8081 -d -i warp10io/warp10:1.0.7
 ExecStop=/usr/bin/docker stop warp10
