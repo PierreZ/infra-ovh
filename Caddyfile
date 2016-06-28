@@ -6,3 +6,7 @@ quantum.pierrezemb.ovh {
 	tls contact@pierrezemb.fr
 	proxy / pierrezemb.ovh:8081
 }
+bosun.pierrezemb.ovh {
+	tls contact@pierrezemb.fr
+	proxy / pierrezemb.ovh:8070
+}
